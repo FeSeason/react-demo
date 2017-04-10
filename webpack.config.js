@@ -21,7 +21,7 @@ module.exports = {
     },
     output: {
         path: path.resolve(__dirname, 'build'),
-        filename: '[name].js?v=[hash:8]'
+        filename: 'js/[name].js?v=[hash:8]'
     },
     // postcss: function () {
     //     return {
@@ -70,6 +70,6 @@ module.exports = {
             title: "网页标题",
             inject: 'body',
         }),
-        new ExtractTextPlugin('[name].css?v=[hash:8]', {allChunks: true}),
+        new ExtractTextPlugin('css/[name].css?v=[hash:8]', {allChunks: true}),
     ]
 }
